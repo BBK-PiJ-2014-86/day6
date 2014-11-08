@@ -25,10 +25,29 @@ public class Matrix {
 		} else {
 			
 		}
-		
 	}
 	
-	
-	
-	
+	public void setRow (int row, String values){
+		
+		String numbersOnly="";
+		
+		for (int k =0; k<values.length();k++) {
+			if (Character.isDigit(values.charAt(k))) {
+				numbersOnly = numbersOnly+ Character.toString(values.charAt(k));
+			}
+		}
+		
+		if (row<=x && numbersOnly.length()==array[row].length) {
+			
+			for (int i = 0; i<numbersOnly.length(); i++) {
+
+				array[row][i] = Character.getNumericValue(numbersOnly.charAt(i));
+
+			}
+			
+		} else {
+			
+		}
+		
+	}
 }
