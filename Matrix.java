@@ -50,4 +50,22 @@ public class Matrix {
 		}
 		
 	}
+	
+	public void setColumn (int col, String val) {
+		
+		String numbersOnly="";
+		
+		for (int k =0; k<val.length();k++) {
+			if (Character.isDigit(val.charAt(k))) {
+				numbersOnly = numbersOnly+ Character.toString(val.charAt(k));
+			}
+		}
+		
+	
+			for (int i = 0; i<numbersOnly.length();i++) {
+			
+			array[i][col]=Character.getNumericValue(numbersOnly.charAt(i));
+			}
+		
+	}
 }
