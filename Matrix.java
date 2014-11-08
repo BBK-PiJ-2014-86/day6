@@ -68,4 +68,28 @@ public class Matrix {
 			}
 		
 	}
+	
+	public String toString () {
+		
+		String arrayString = "";
+		
+		arrayString +="[";
+		
+		for (int i=0; i<array.length;i++){
+			for (int k=0; k<array[i].length;k++){
+				if (k==array[i].length-1){
+				    arrayString+=array[i][k];
+				} else {
+					arrayString += array[i][k]+ ",";
+				}
+			}
+			if((i!=array.length-1)) {
+			arrayString += ";";
+			}
+		}
+		
+		arrayString +="]";
+		
+		return arrayString;
+	}
 }
