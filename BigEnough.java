@@ -19,7 +19,22 @@ public class BigEnough {
 		ea.enterId(sc.nextInt());
 		ea.enterName(sc.nextLine());
 		
+		for (int i = 0; i < ea.getSizeId(); i++) {
+			
+			if (ea.getIdArray()[i]%2==0) {
+				System.out.println(ea.getIdArray()[i]);
+				System.out.println(ea.getNameArray()[i]);
+			}
+			
+			if (ea.getNameArray()[i].charAt(0)=='S') {
+				System.out.println(ea.getIdArray()[i]);
+				System.out.println(ea.getNameArray()[i]);
+			}
+		}
 		
+
 	}
 
+		
+	
 }
