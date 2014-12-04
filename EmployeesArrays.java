@@ -16,6 +16,14 @@ public class EmployeesArrays {
 		return name;
 	}
 	
+	public int getSizeId () {
+		return id.length;
+	}
+	
+	public int getSizeString () {
+		return name.length;
+	}
+	
 	public void enterId (int id) {
 		
 		this.id [idCounter] = id;
@@ -49,7 +57,7 @@ public void enterName (String name) {
 		
 		name = tempArray;
 		
-		System.out.println("new one created " + name.length);
+		//System.out.println("new one created " + name.length);
 }
 
 	private void createNewIdArray() {
