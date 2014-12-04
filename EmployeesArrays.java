@@ -37,10 +37,10 @@ public class EmployeesArrays {
 	
 public void enterName (String name) {
 		
-		this.name [idCounter] = name;
+		this.name [nameCounter] = name;
 		nameCounter++;
 		
-		if (this.id.length==nameCounter) {
+		if (this.name.length==nameCounter) {
 			createNewNameArray();
 		}
 		
