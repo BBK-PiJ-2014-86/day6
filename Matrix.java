@@ -92,4 +92,15 @@ public class Matrix {
 		
 		return arrayString;
 	}
+	
+	public void prettyPrint () {
+		
+		for (int i=0; i<array.length;i++) {
+			for(int k =0; k<array[i].length;k++) {
+				System.out.print(array[i][k]+" ");
+			}
+			System.out.println();
+		}
+		
+	}
 }
