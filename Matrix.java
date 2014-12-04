@@ -103,4 +103,35 @@ public class Matrix {
 		}
 		
 	}
+	
+	public Matrix (String stringArray) {
+		
+		x = 0;
+		y = 0;
+		String [] FArray;
+		
+		FArray = stringArray.split(";");
+		
+		x = FArray.length;
+		
+		for (int i = 0; i<x; i++) {
+			String tempArray [] =  FArray[i].split(",");
+			
+			if (tempArray.length >y) {
+				y = tempArray.length;
+			}
+		}
+		
+		array = new int [x][y];
+		
+		for (int k = 0; k<x; k++) {
+			
+			String [] tempArray = FArray[k].split(",");
+			
+			for (int j =0; j<tempArray.length; j++) {
+				array[k][j] = Integer.parseInt(tempArray[j]);
+			}
+		}
+		
+	}
 }
